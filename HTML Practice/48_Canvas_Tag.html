@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Canvas Tag</title>
+    </head>
+    <body>
+        <canvas id="mycanvas" height="300px" width="300px"></canvas>
+        <script>
+            var rect = document.getElementById("mycanvas")
+            var draw = rect.getContext("2d")
+            draw.fillStyle = "red"
+            draw.fillRect(10,10,100,200)
+        </script>
+    </body>
+</html>
