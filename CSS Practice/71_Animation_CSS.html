@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation CSS</title>
+    <style>
+      .div1 {
+        height: 100px;
+        width: 100px;
+        background-color: darkblue;
+        animation: animation1 2s ease-in-out 2s infinite alternate both;
+        /* animation-name: animation1; */
+        /* animation-duration: 1s; */
+        /* animation-timing-function: ease; */
+        /* animation-delay: 2s; */
+        /* animation-iteration-count: infinite; */
+        /* animation-direction: alternate; */
+        /* animation-fill-mode: both; */
+        /* animation-play-state: running; */
+        /* margin: 150px auto; */
+      }
+      @keyframes animation1 {
+        0% {
+            margin-left: 0px;
+            transform: rotate(0);
+            /* background-color: blueviolet; */
+        }
+        50% {
+            margin-left: 650px;
+            margin-top: 550px;
+            transform: rotate(360deg);
+            background-color: springgreen;
+        }
+        100% {
+            margin-left: 1250px;
+            margin-bottom: 1250px;
+            transform: rotate( 0deg);
+            background-color: red;
+        }
+        /* form{
+          transform: scale(0.5) rotate(0deg);
+        }
+        to{
+          background-color: red;
+          transform: rotate(360deg) scale(1.3);
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+  </body>
+</html>

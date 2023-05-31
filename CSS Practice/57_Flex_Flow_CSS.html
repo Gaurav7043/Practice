@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Flow CSS</title>
+    <style>
+        .main{
+            display: flex;
+            border: 2px solid black;
+            width: 100%;
+            /* flex-flow: column wrap; */
+            /* flex-flow: column-reverse wrap; */
+            /* flex-flow: row-reverse wrap-reverse; */
+            flex-flow: row wrap-reverse;
+        }
+        .div1{
+            height: 100px;
+            width: 50%;
+            background-color: teal;
+        }
+        .div2{
+            height: 100px;
+            width: 50%;
+            background-color: tomato;
+        }
+        .div3{
+            height: 100px;
+            width: 50%;
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+    </div>
+</body>
+</html>

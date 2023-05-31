@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* .grid-example{
+            background-color: azure;
+        } */
+        .grid-example .container{
+            margin: 0px 80px;
+        }
+        .grid-example .grid-p{
+            padding: 30px 0px;
+        }
+        .grid-example h4{
+            color: green;
+            padding: 0px 0px 7px 0px;
+            font-weight: 400;
+            line-height: 1em;
+        }
+        .grid-example .p1{
+            color: gray;
+            padding: 0px 0px 50px 0px;
+            font-weight: 300;
+            line-height: 2em;
+            font-size: 14px;
+        }
+        .grid-example .grid-box{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        /* .grid-example .grid-box .sub-box{
+            border: 2px solid gray;
+        } */
+        .grid-example .grid-box .sub-box img{
+            height: auto;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .grid-example .grid-box .sub-box .text{
+            padding: 20px 0px;
+        }
+        .grid-example .grid-box .sub-box .text h3{
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        .grid-example .grid-box .sub-box .text h3 a{
+            text-decoration: none;
+            color: black;
+        }
+        .grid-example .grid-box .sub-box .text h3 a:hover{
+            color: green;
+        }
+        .grid-example .grid-box .sub-box .text p{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-example">
+        <div class="container">
+            <div class="grid-p">
+                <!-- main div -->
+                    <h4>Healthy food</h4>
+                    <h1>We Provide High-Quality <br> Organic Products</h1>
+                    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="grid-box">
+                    <div class="sub-box">
+                        <div class="image">
+                            <img src="image/11.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3><a href="">Industry Oridented</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sub-box">
+                        <div class="image">
+                            <img src="image/12.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3><a href="">Fresh Vegetables</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sub-box">
+                        <div class="image">
+                            <img src="image/13.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3><a href="">Fresh Milk</a></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherit CSS</title>
+    <style>
+        .outer{
+            height: auto;
+            width: 300px;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 5px;
+            /* overflow: hidden; */
+        }
+        /* .outer > .inner{} */
+        .outer .inner{
+            height: inherit;
+            width: inherit;
+            border: inherit;
+            padding: inherit;
+            margin: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus repudiandae culpa accusamus rerum alias tempora ex, asperiores sequi atque veniam nesciunt iste molestias sint minus, molestiae a aliquam, possimus vero.
+        <div class="inner">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur et facere esse quaerat. Dolores temporibus maiores enim aliquid, quos quam iusto molestiae sunt vel sequi veniam exercitationem, nemo voluptate aperiam!
+        </div>
+    </div>
+</body>
+</html>

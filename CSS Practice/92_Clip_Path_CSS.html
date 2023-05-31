@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip Path</title>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+            /* x-value, x-movement shapes */
+            /* clip-path: circle(50% at 50%); */
+            /* x-value, y-value, x-movement, y-movement */
+            clip-path: ellipse(50% 51% at 70% 56%);
+            /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+            /* clip-path: polygon(0% 0% , 100% 0% , 50% 100%); */
+        }
+    </style>
+</head>
+<body>
+    <!-- for more shapes=> https://bennettfeely.com/clippy/ , https://www.cssportal.com/css-clip-path-generator/-->
+    <img src="image/9.jpg" alt="">
+</body>
+</html>

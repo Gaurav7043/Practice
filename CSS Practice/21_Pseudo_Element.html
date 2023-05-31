@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pseudo Element CSS</title>
+    <style>
+        h1::before {
+            content: "\1F44D";
+        }
+        
+        h1::after {
+            content: "\1F44D";
+        }
+        
+        .div1 {
+            height: auto;
+            width: 200px;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            text-align: justify;
+            text-indent: 60px;
+        }
+        
+        .div1::first-letter {
+            font-size: 30px;
+        }
+        
+        .div1::first-line {
+            color: red;
+        }
+        
+        .div1::selection {
+            color: yellow;
+            background-color: orangered;
+        }
+        
+        li::marker {
+            color: green;
+        }
+        
+        input::placeholder {
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pseudo Element ki value ka saath work kar bana -->
+    <h1>Hello World</h1>
+    <div class="div1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+    </ul>
+    <input type="text" name="" placeholder="Enter Name">
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent & Child Selector CSS</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+        /* .div1 p{
+            background-color: crimson;
+        } */
+        .div1 p{
+            color: tomato;
+        }
+        .div1 p span{
+            color: blue;
+        }
+        .div2 p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam exercitationem dignissimos, temporibus porro sequi eum perferendis. Exercitationem animi tempore aperiam voluptatibus laboriosam veniam sit. Veritatis placeat et nemo quas maiores!
+            <span>hello</span>
+        </p>
+    </div>
+    <div class="div2">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolor animi quis iusto sapiente minima error accusantium, odit iste hic itaque dolorum atque mollitia inventore id cum, expedita optio dolorem!
+        </p>
+    </div>
+</body>
+</html>

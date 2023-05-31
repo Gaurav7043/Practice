@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header & Dropdown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .main{
+            background-color: rgba(235, 57, 93, 0.601);
+        }
+        .main .value-m{
+            margin: 0px 50px;
+        }
+        .main .value-p{
+            padding: 30px 0px;
+        }
+        .main .menu-bar{
+            display: flex;
+            align-items: center;
+        }
+        .main .logo{
+            flex: 1.5;
+        }
+        .main .menu-bar .logo span{
+            color: orangered;
+        }
+        .main .menu-bar .logo h1{
+            color: white;
+            font-size: 35px;
+        }
+        .main .nav{
+            flex: 4;
+        }
+        .main .menu-bar .nav ul{
+            display: flex;
+            justify-content:center;
+            gap: 40px;
+        }
+        .main .menu-bar .nav ul li{
+            padding: 10px;
+        }
+        .main .menu-bar .nav li a{
+            color: white;
+            font-weight: bold;
+            text-transform: capitalize;
+            /* font-size: 18px; */
+        }
+        .main .menu-bar .nav .dispmenu{
+            position: relative;
+        }
+        .main .menu-bar .nav .dispmenu .showmenu{
+            display: none;
+            position: absolute;
+            top: 43px;
+            left: 0;
+            background-color: #f76933;
+            width: 121px;
+            height: auto;
+            text-align: center;
+        }
+        .main .menu-bar .nav .dispmenu:hover .showmenu{
+            display: block;
+        }
+        .main .menu-bar .nav .dispmenu .fa-angle-down{
+            transition: 1s all ease;
+        }
+        .main .menu-bar .nav .dispmenu:hover .fa-angle-down{
+            transform: rotate(180deg);
+        }
+        .main .menu-bar .nav .dispmenu .showmenu .cube{
+            height: 15px;
+            width: 15px;
+            background-color: #f76933;
+            position: absolute;
+            top: -7px;
+            left: 47px;
+            transform: rotate(45deg);
+        }
+         .main .menu-bar .search{
+            flex: 1;
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            align-items: center;
+        }
+        .main .menu-bar .search button{
+            height: 37px;
+            width: 100px;
+            border-radius: 5px;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .main .menu-bar .search .icon span{
+            color: white;
+            font-size: 22px;
+        } 
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="value-m">
+            <div class="value-p">
+                <div class="menu-bar">
+                    <div class="logo">
+                        <h1>
+                            <span class="fa-solid fa-chalkboard-teacher"></span>
+                            Edukator
+                        </h1>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li class="dispmenu">
+                                <a href="">About<span class="fa-solid fa-angle-down"></span></a>
+                                <ul class="showmenu">
+                                    <div class="cube"></div>
+                                    <li><a href="">About 1</a></li>
+                                    <li><a href="">About 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Contact</a></li>
+                        <ul>
+                    </div>
+                    <div class="search">
+                        <div class="">
+                            <button>
+                                <span class="fa-solid fa-search"></span>
+                                Search
+                            </button>
+                        </div>
+                        <div class="icon">
+                            <span class="fa-solid fa-moon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

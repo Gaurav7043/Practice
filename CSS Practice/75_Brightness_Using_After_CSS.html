@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brightness Using After CSS</title>
+    <style>
+        .div{
+            height: 400px;
+            width: 500px;
+            background: url(image/img6.jpg) no-repeat center;
+            background-size: cover;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        .div::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 0.525);
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>Image 1</h1>
+    </div>
+</body>
+</html>

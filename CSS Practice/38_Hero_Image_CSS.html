@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hero Image CSS</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		img{
+			height: 653px;
+			width: 100%;
+			filter: brightness(90%);
+		}
+		.main{
+			position: relative;
+		}
+		.text-data{
+			position: absolute;
+			width: 60%;
+			text-align: center;
+			top: 200px;
+			left: 280px;
+			/*background-color: cyan;*/
+		}
+		h1{
+			color: black;
+			font-size: 60px;
+			padding-bottom: 30px;
+			text-shadow: 0px 0px 6px springgreen;
+		}
+		h1:hover{
+			color: chocolate;
+		}
+		p{
+			font-size: 20px;
+			color: black;
+			padding-bottom: 30px;
+			text-shadow: 0px 0px 7px white;
+		}
+		button{
+			height: 40px;
+			width: 120px;
+			font-weight: 700;
+			border-radius: 10px;
+			border: 2px solid crimson;
+			background: transparent;
+			color: crimson;
+		}
+		button:hover{
+			color: white;
+			background-color: crimson;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<img src="image/img4.jpg">
+		<div class="text-data">
+			<h1>Hero Banner</h1>
+			<p>
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<button>Read More</button>			
+		</div>
+	</div>
+</body>
+</html>

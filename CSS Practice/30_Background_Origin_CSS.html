@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Backgroung Origin CSS</title>
+	<style>
+	/*img{
+		height: 200px;
+		width: 200px;
+	}*/
+		.div1{
+			height: 150px;
+			width: 200px;
+			border: 10px dashed red;
+			padding: 20px;
+			background-image: url(image/img2.jpeg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			/* it is actually work with background position */
+			/* cover content area */
+			/*background-origin: content-box;*/
+
+			/* it is deafult value which cover content area and padding area */
+			/*background-origin: padding-box;*/
+
+			/* cover border-area */
+			background-origin: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<!-- <img src="image/img2.jpeg"> -->
+	</div>
+</body>
+</html>

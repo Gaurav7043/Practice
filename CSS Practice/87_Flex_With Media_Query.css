@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex-box{
+    background-color: rgb(141, 237, 237);
+}
+.flex-box .container{
+    margin: 0px 80px;
+}
+.flex-box .flex-box-p{
+    padding: 50px 0px;
+}
+.flex-box .res-flex-box{
+    display: flex;
+    gap: 20px;
+}
+.flex-box .res-flex-box .left-value{
+    flex: 1;
+    text-align: center;
+}
+.flex-box .res-flex-box .left-value .head{
+    font-size: 38px;
+    color: palevioletred;
+}
+.flex-box .res-flex-box .left-value .sub-head{
+    font-size: 22px;
+    padding: 20px 0px;
+    color: gray;
+}
+.flex-box .res-flex-box .left-value p{
+    color: gray;
+}
+.flex-box .res-flex-box .left-value .btns{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.flex-box .res-flex-box .left-value button{
+    height: 45px;
+    width: 150px;
+    font-size: 20px;
+    color: white;
+}
+.flex-box .res-flex-box .left-value .btn1{
+    border: 2px solid palevioletred;
+    background-color: palevioletred;
+}
+.flex-box .res-flex-box .left-value .btn2{
+    border: 2px solid #125df3;
+    background-color: #125df3;
+}
+.flex-box .res-flex-box .left-value .btn1:hover{
+    border: 2px solid white;
+}
+.flex-box .res-flex-box .left-value .btn2:hover{
+    background-color: transparent;
+    color: #125df3;
+}
+.flex-box .res-flex-box .right-value{
+    flex: 1;
+}
+.flex-box .res-flex-box .right-value img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* ==============media query=============== */
+@media (max-width: 576px) {
+    .flex-box .container{
+        margin: 0px 20px;
+    }
+    .flex-box .res-flex-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-box .res-flex-box .left-value .head{
+        font-size: 33px;
+    }   
+}
+@media (min-width: 576px) {
+    .flex-box .container{
+        margin: 0px 30px;
+    }
+    .flex-box .res-flex-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-box .res-flex-box .left-value .head{
+        font-size: 33px;
+    }
+}
+@media (min-width: 768px) {
+    .flex-box .container{
+        margin: 0px 50px;
+    }
+    /* inherit value from min-width 576px */
+    .flex-box .res-flex-box .left-value .head{
+        font-size: 38px;
+    }
+}
+@media (min-width: 992px) {
+    .flex-box .container{
+        margin: 0px 50px;
+    }
+    .flex-box .res-flex-box{
+        display: flex;
+        flex-direction: row;
+    }   
+}
+@media (min-width: 1200px) {
+    .flex-box .container{
+        margin: 0px 80px;
+    }
+}

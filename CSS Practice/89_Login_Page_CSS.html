@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background: conic-gradient(hotpink,pink,#ae46e7,magenta,hotpink);
+        }
+        .container{
+            margin: 0px 80px;
+        }
+        .login-p{
+            padding: 100px 0px;
+        }
+        .login{
+            background-color: white;
+            box-shadow: 0px 0px 5px 0px gray;
+            border-radius: 10px;
+            width:70%;
+            margin: auto;
+        }
+        .login h1{
+            text-align: center;
+        }
+        .loginpage{
+            display: flex;
+        }
+        .loginpage .left-design{
+            flex: 1;
+            border-radius: 10px 0px 0px 10px;
+            background: url(image/2.avif) no-repeat center;
+            background-size: cover;
+        }
+        .loginpage .left-design img{
+            height: auto;
+            max-width: 100%;
+        }
+        .loginpage .right-form{
+            flex: 1;
+            padding: 60px 30px;
+        }
+        .loginpage .right-form h2{
+            font-size: 30px;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+        }
+        .loginpage .right-form .inputval{
+            padding: 5px 0px;
+        }
+        input[type="text"],[type="password"]{
+            height: 40px;
+            width: 100%;
+            padding: 0px 7px;
+            border: none;
+        }
+        input[type="text"]:focus-visible,[type="password"]:focus-visible{
+            outline: none;
+        }
+        .inputval::after{
+            content: "";
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(to left,red,blue);
+            display: block;
+        }
+        .inputval-btn{
+            margin: 10px 0px;
+            padding: 10px 0px;
+            background:linear-gradient(to left,red,blue);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            color: white;
+        }
+        .inputval-btn a{
+            color: white;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        .loginpage .right-form p{
+            text-align: center;
+            color: gray;
+            padding-bottom: 20px;
+        }
+        .loginpage .twitter{
+            margin: 10px 0px;
+            width: 100%;
+            padding: 10px;
+            background-color: #249ae2;
+            color: white;
+        }
+        .loginpage .facebook{
+            margin: 10px 0px;
+            width: 100%;
+            padding: 10px;
+            background-color: #4444e1;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="login_page">
+        <div class="container">
+            <div class="login-p">
+                <div class="login">
+                    <!-- <h1>Sign in</h1> -->
+                    <div class="loginpage">
+                            <div class="left-design"></div>
+                            <div class="right-form">
+                                <h2>Sign in</h2>
+                                <form action="#">
+                                    <div class="inputval">
+                                        <input type="text" placeholder="Email Address">
+                                    </div>
+                                    <div class="inputval">
+                                        <input type="password" placeholder="Password">
+                                    </div>
+                                    <div class="inputval-btn">
+                                        <div class="link">
+                                            <a href="">continue</a>
+                                        </div>
+                                        <div class="arrow">
+                                            <span class="fa-solid fa-angle-right"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                                <p>or connect with social media</p>
+                                <div class="social-media">
+                                    <div class="twitter">
+                                        <span class="fa-brands fa-twitter"></span> 
+                                        <span>Sign in with twitter</span>
+                                    </div>
+                                    <div class="facebook">
+                                        <span class="fa-brands fa-facebook-f"></span> 
+                                        <span>Sign in with facebook</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

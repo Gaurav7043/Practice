@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay Effect Center Content</title>
+    <style>
+        .imageoverlay{
+            height: 300px;
+            width: 400px;
+            /* border: 2px solid black; */
+            margin: 150px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        img{
+            height: 300px;
+            width: 400px;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            color: white;
+            background-color: rgb(0, 0, 0 , 0.588);
+            display: grid;
+            place-content: center;
+            transform: scale(0);
+            transition: 1s all ease;
+        }
+        .imageoverlay:hover .overlay{
+            transform: scale(1) rotate(360deg);
+        }
+        .overlay .text{
+            transform: scale(0);
+            transition: 1s all ease;
+            transition-delay: 2s;
+        }
+        .imageoverlay:hover .text{
+            transform: scale(1) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="imageoverlay">
+        <img src="image/9.jpg" alt="">
+        <div class="overlay">
+            <div class="text">
+                <h1>Hello World</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

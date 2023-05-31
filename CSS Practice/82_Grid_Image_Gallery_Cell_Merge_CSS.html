@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        img{
+            height: 200px;
+            width: 300px;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        .img1{
+            grid-column: 1 / span 2;
+        }
+        .img5{
+            grid-row: 2 / span 2;
+            grid-column: 2 / span 1;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="img1">
+            <img src="image/1.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="image/2.jpg" alt="">
+        </div>
+        <div class="img3">
+            <img src="image/3.jpg" alt="">
+        </div>
+        <div class="img4">
+            <img src="image/4.jpg" alt="">
+        </div>
+        <div class="img5">
+            <img src="image/5.jpg" alt="">
+        </div>
+        <div class="img6">
+            <img src="image/6.jpg" alt="">
+        </div>
+        <div class="img7">
+            <img src="image/7.jpg" alt="">
+        </div>
+        <div class="img8">
+            <img src="image/14.jpg" alt="">
+        </div>
+        <div class="img9">
+            <img src="image/9.jpg" alt="">
+        </div>
+        <div class="img10">
+            <img src="image/10.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

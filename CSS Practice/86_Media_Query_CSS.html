@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        p{
+            background-color: tomato;
+        }
+        @media (max-width: 576px) {
+            p{
+                background-color: rgb(67, 233, 233);
+            }
+        }
+        @media (min-width: 576px) {
+            p{
+                background-color: rgb(169, 247, 92);
+                color: rgb(51, 224, 123);
+            }
+        }
+        @media (min-width: 768px) {
+            p{
+                background-color: rgb(133, 240, 186);
+                color: black;
+            }
+        }
+        @media (min-width: 992px) {
+            p{
+                background-color: rgb(247, 117, 247);
+            }
+        }
+        @media (min-width: 1200px) {
+            p{
+                background-color: tomato;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- your content is set as per your device width
+        
+        mini mobile device              => max-width : 576px
+        large mobile device             => min-width : 576px
+        tablet device                   => min-width : 768px
+        mini leptop                     => min-width : 992px
+        large leptop                    => min-width : 1140px - 1200px
+        tv screen                       => min-width : 1400px
+    -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laudantium consequatur laboriosam. Rerum consequatur debitis magni minima eum nihil, totam itaque corrupti dolore, quisquam voluptates aut animi provident, blanditiis placeat?
+    </p>
+</body>
+</html>

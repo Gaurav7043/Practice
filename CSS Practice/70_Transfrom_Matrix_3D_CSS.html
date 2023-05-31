@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfrom Matrix 3D CSS</title>
+    <style>
+        .div{
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            margin: auto;
+            transition: 1s all ease;
+            /* scaleX, skewY(), skewX(), rotate(), rotateX(), rotateY(), rotateZ(),
+               scaleY(), scaleZ(), translateX(), translateY(), translateZ() */
+            /* transform: matrix3d(1,0,1,0,1,1,1,0.5,0,1,0,1,0,1,1,0); */
+        }
+        .div:hover{
+            transform: matrix3d(1,0,1,0,1,1,1,0.5,0,1,0,1,0,1,1,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid Cell Merge CSS</title>
+    <style>
+        .main{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(5, 1fr);
+            justify-items: center;
+            align-content: center;
+        }
+        .div1, .div3, .div5, .div7, .div9{
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+        }
+        .div2, .div4, .div6, .div8, .div10{
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+        }
+        .div1{
+            width: 100%;
+            grid-column: 1 / span 2;
+        }
+        .div3{
+            height: 100%;
+            grid-row: 1 / span 2;
+            grid-column: 4 / span 1;
+        }
+        .div4{
+            width: 100%;
+            grid-column: 5 / span 2;
+        }
+        .div5{
+            height: 100%;
+            grid-row: 2 / span 2;
+            grid-column: 1 / span 1;
+        }
+        .div6{
+            width: 100%;
+            grid-column: 2 /span 2;
+        }
+        .div7{
+            width: 100%;
+            grid-column: 5 / span 2;
+        }
+        .div8{
+            height: 200px;
+            /* width: 100%; */
+            grid-row: 3 / span 2;
+            grid-column: 2 / span 1;
+        }
+        .div9{
+            width: 100%;
+            grid-column: 3 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <div class="div3">div 3</div>
+        <div class="div4">div 4</div>
+        <div class="div5">div 5</div>
+        <div class="div6">div 6</div>
+        <div class="div7">div 7</div>
+        <div class="div8">div 8</div>
+        <div class="div9">div 9</div>
+        <div class="div10">div 10</div>
+    </div>
+</body>
+</html>

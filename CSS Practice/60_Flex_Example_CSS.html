@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Example CSS</title>
+    <link rel="icon" href="image/logo.png" type="icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .main{
+            background-color: antiquewhite;
+        }
+        .main .margin{
+            margin: 80px 80px;
+        }
+        .main .value-p{
+            padding: 60px 0px;
+        }
+        .main .flex-box{
+            display: flex;
+            gap: 20px;
+        }
+        .main .flex-box .left-value{
+            flex: 1;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(92, 88, 88);
+        }
+        .main .flex-box .left-value h3 a:hover{
+            color: dodgerblue;
+        }
+        .main .flex-box .left-value .txt1{
+            margin-top: 25px;
+            padding-bottom: 50px;
+        }
+        .main .flex-box .left-value .txt1 h3{
+            padding-bottom: 15px;
+        }
+        .main .flex-box .left-value .txt2{
+            padding-bottom: 50px;
+        }
+        .main .flex-box .left-value .txt2 h3{
+            padding-bottom: 15px;
+        }
+        .main .flex-box .left-value .txt3{
+            padding-bottom: 50px;
+        }
+        .main .flex-box .left-value .txt3 h3{
+            padding-bottom: 15px;
+        }
+        .main .flex-box .left-value p{
+            color: grey;
+        }
+        .main .flex-box .right-value{
+            flex: 1;
+        }
+        .main .flex-box .right-value img{
+            height: 400px;
+            min-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="margin">
+            <div class="value-p">
+                <div class="flex-box">
+                    <div class="left-value">
+                        <div class="txt1">
+                            <h3><a href="">Progressive Percentage</a></h3>
+                            <p>
+                                Mollitia placeat modi explicabo voluptatum corporis unde Dicta, provident Rem adipisci Mollitia placeat modi.
+                            </p>
+                        </div>
+                        <div class="txt2">
+                            <h3><a href="">Easy Documentation</a></h3>
+                            <p>
+                                Mollitia placeat modi explicabo voluptatum corporis unde Dicta, provident Rem adipisci Mollitia placeat modi.
+                            </p>
+                        </div>
+                        <div class="txt3">
+                            <h3><a href="">Compatible Percentage</a></h3>
+                            <p>
+                                Mollitia placeat modi explicabo voluptatum corporis unde Dicta, provident Rem adipisci Mollitia placeat modi.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right-value">
+                        <img src="image/7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

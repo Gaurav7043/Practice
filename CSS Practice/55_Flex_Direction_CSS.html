@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction CSS</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+        }
+        .div1{
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+        }
+        .div2{
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+        }
+        .div3{
+            height: 100px;
+            width: 100px;
+            background-color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">div 1</div>
+        <div class="div2">div 2</div>
+        <div class="div3">div 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid CSS</title>
+    <style>
+        .main{
+            display: grid;
+            /* grid-template-columns: auto auto auto auto auto; */
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            justify-items: center;
+            align-content: center;
+        }
+        .sub{
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+        }
+        .sub1{
+            height: 100px;
+            width: 100px;
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub">1</div>
+        <div class="sub1">2</div>
+        <div class="sub">3</div>
+        <div class="sub1">4</div>
+        <div class="sub">5</div>
+        <div class="sub1">6</div>
+        <div class="sub">7</div>
+        <div class="sub1">8</div>
+        <div class="sub">9</div>
+        <div class="sub1">10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        ul{
+            list-style: none;
+        }
+        .dropdown{
+            background-color: lightcoral;
+        }
+        .dropdown ul{
+            display: flex;
+            gap: 20px;
+        }
+        .dropdown ul li{
+            padding: 20px;
+        }
+        .dispmenu{
+            position: relative;
+        }
+        .dispmenu .showmenu{
+            display: none;
+            position: absolute;
+            top: 57px;
+            left: 0;
+            background: #03A9F4;
+            width: 112px;
+            height: auto;
+        }
+        .dispmenu:hover .showmenu{
+            display: block;
+        }
+        .dispmenu .showmenu li{
+            padding: 10px;
+        }
+        .dispmenu .fa-angle-down{ 
+            transition: 1s all ease;
+        }
+        .dispmenu:hover .fa-angle-down{
+            transform: rotate(-180deg);
+        }
+        .dispmenu .showmenu .cube{
+            height: 20px;
+            width: 20px;
+            background-color: #03A9F4;
+            position: absolute;
+            top: -10px;
+            left: 45px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="dispmenu">
+                <a href="">About<i class="fa-solid fa-angle-down"></i></a>
+                <ul class="showmenu">
+                    <div class="cube"></div>
+                    <li><a href="">About 1</a></li>
+                    <li><a href="">About 2</a></li>
+                </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>
