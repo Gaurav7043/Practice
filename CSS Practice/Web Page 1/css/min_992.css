@@ -1,0 +1,73 @@
+@media (min-width:992px) {
+    /* ============ common class css =========== */
+    .container{
+        margin: 0px 60px;
+    }
+     /* ============== header ================== */
+     header .header-nav .nav{
+        display: flex;
+        justify-content: center;
+    }
+    header .header-nav .theme .menu-bar button{
+        display: none;
+    }
+    header .header-nav .logo{
+        flex: 2;
+    }
+    /* ============== homepage =============    */
+       .homepage .homepage-text{
+        width: 50%;
+    }
+    .homepage .homepage-text h1{
+        font-size: 40px;
+    }
+    /* ======= about us ======== */
+    .about-us .about-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .about-us .about-flex .about-left{
+        padding: 20px;
+    }
+  /* ============ our work ========= */
+  .ourWork .work-box {
+      display: flex;
+      flex-direction: row;
+  }
+  .ourWork .work-box .right-work .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+  }
+  /* =========== services =========== */
+    .services .service-box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px
+    }
+    .services .service-box .img-text{
+        left: 50px;
+        bottom: 85px;
+        width: 70%;
+    }
+    /* gallary section inherit from 768px */
+
+       /* ======= success story ==== */
+    .successStory .success-flex{
+        display: flex;
+        flex-direction: row;
+    }
+      /* ======= article ========= */
+    .articles .gridBox{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+
+    /* middle footer */
+    footer .middleFooter .footer_grid{
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 1fr;
+        gap: 20px;
+    }
+}

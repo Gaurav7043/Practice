@@ -1,0 +1,84 @@
+@media (min-width:576px) {
+    /* ============ common class css =========== */
+    .container{
+        margin: 0px 30px;
+    }
+    /* ============== header ================== */
+    header .header-nav .nav{
+        display: none;
+    }
+    header .header-nav .theme .menu-bar button{
+        display: block;
+    }
+    header .header-nav .logo{
+        flex: 2;
+    }
+    header .header-nav .logo h6{
+        font-size: 26px;
+    }
+    /* ============== homepage =============    */
+    .homepage .homepage-text{
+        width: 100%;
+    }
+    .homepage .homepage-text h1{
+        font-size: 35px;
+    }
+    /* ======= about us ======== */
+    .about-us .about-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us .about-flex .about-left{
+        padding: 5px;
+    }
+     /* ============ our work ========= */
+    .ourWork .work-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .ourWork .work-box .right-work .work-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+     /* =========== services =========== */
+    .services .service-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:20px
+    }
+    .services .service-box .img-text{
+        left: 150px;
+    }
+      /* ========== gallary ========== */
+    .GallarySec .gallary-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .GallarySec .brands{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+      /* ======= success story ==== */
+    .successStory .success-flex{
+        display: flex;
+        flex-direction: column;
+    }
+     /* ======= article ========= */
+    .articles .gridBox{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    /* top footer */
+    footer .top-footer form input[type="text"] {
+        width: 300px;
+    }
+     /* middle footer */
+    footer .middleFooter .footer_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

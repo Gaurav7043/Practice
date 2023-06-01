@@ -1,0 +1,27 @@
+@media (min-width:1200px) {
+    /* ============ common class css =========== */
+    .container{
+        margin: 0px 80px;
+    }
+    /* header section inherit from 992px */
+    /* ============== homepage =============    */
+    .homepage .homepage-text h1{
+        font-size: 45px;
+    }
+    /* about us inherit from 992 px */
+
+    /* =============== our work =========== */
+    .ourWork .work-box .right-work .work-grid {
+        display: grid;
+        gap: 20px;
+    }
+    /* =========== services ========= */
+    .services .service-box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px
+    }
+    .services .service-box .img-text{
+        bottom: 65px;
+    }
+}
