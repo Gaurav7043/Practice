@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+    /* =================common css================= */
+    .container{
+        margin: 0px 50px;
+    }
+    /* =================header==================== */
+    /* inheret in min 576px */
+    /* ==========home page================== */
+    .homepage .homepage-contect h1 {
+        font-size: 40px;
+    }
+    .homepage .homepage-contect p {
+        padding: 30px 0px 60px 0px;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    /* ===============learn_course============= */
+    /* learn course section inherit from min width 576px */
+    .learn_course .learn-bottom {
+        width: 75%;
+        padding: 60px 0px;
+    }
+    /* ==============our facilities================= */
+    .ourfacilities .our_p{
+        padding: 80px 0px;
+    }
+    /* ===================news section======================= */
+    /* news section inherit from min width 576px */
+    /* ==============learn online=============== */
+    /* learn online inherit from min width 576px */
+    /* ===============professional=================== */
+    /* professional inherit from min width 576px */
+    /* ===================testimonials=================== */
+    .testimonials .client_grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* ==================brands_logo======================= */
+    .brands .brands_grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* ============footer====================== */
+    /* footer inherit from min width 576px */
+}

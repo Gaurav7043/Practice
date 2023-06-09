@@ -1,0 +1,59 @@
+@media (min-width: 1200px) {
+    /* =================common css================= */
+    .container{
+        margin: 0px 80px;
+    }
+    /* =================header==================== */
+    .header .navbar .logo .fa-gem{
+        font-size: 38px;
+    }
+    .header .navbar .logo h1{
+        font-size: 34px;
+    }
+    /* ==========home page================== */
+    .learn_course .learn_details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .homepage .homepage-contect h1 {
+        font-size: 70px;
+    }
+    .homepage .homepage-contect p {
+        padding: 20px 0px 60px 0px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+     /* ===============learn_course============= */
+    .learn_details .learn-grid .learn-text h3 {
+        font-size: 20px;
+    }
+    .learn_course .learn-bottom {
+        width: 50%;
+        padding: 60px 0px;
+    }
+    /* ==============our facilities================= */
+    .ourfacilities .our_p{
+        padding: 100px 0px;
+    }
+    /* ===================news section======================= */
+    /* news section inherit from min width 992px */
+    /* ==============learn online=============== */
+    /* learn online inherit from min width 992px */
+    /* ===============professional=================== */
+    .professional .pro_flex{
+        display: flex;
+        flex-direction: row;
+    }
+    .professional .pro_flex .pro_flex_right .upper_text{
+        transform: translateY(153px);
+    }
+    /* ===================testimonials=================== */
+    .testimonials .client_grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* ==================brands_logo======================= */
+    /* brands_logo inherit from min width 992px */
+    /* ============footer====================== */
+    /* footer inherit from min width 992px */
+}
