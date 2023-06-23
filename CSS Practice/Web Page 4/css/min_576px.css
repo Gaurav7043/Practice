@@ -26,10 +26,7 @@
         font-size: 20px;
     }
     .our .grid_box{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-        margin: 0px 130px;
+        grid-template-columns: repeat(2, 1fr);
     }
     /* =============section 4=================== */
     .shop .shop_main .images{
