@@ -1,0 +1,66 @@
+@media (min-width : 992px) {
+    /* ========common css============ */
+    .container {
+        margin: 0px 65px;
+    }
+    /* =========header============= */
+    header .flex_box .icon{
+        display: flex;
+    }
+    /* =================section 2=============== */
+    .home_page .home_box .btn1, .btn2{
+        width: 150px;
+    }
+    /* ===========section 3============= */
+    .our .grid_box{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin: 0px 0px;
+    }
+    /* ============section 4========== */
+    .shop .shop_main .images{
+        padding-left: 250px;
+    }
+    .shop .shop_main .images img{
+        padding-top: 70px;
+    }
+    .shop .shop_main .text_info{
+        width: 520px;
+        top: 0px;
+    }
+    .shop .shop_main .text_info p{
+        padding-bottom: 20px;
+    }
+    /* ===========section 5============ */
+    /* section 5 inherit form min width 768px */
+    /* =============section 6============== */
+    .blog .blog_main .blog_flex{
+        flex-direction: row;
+    }
+    .blog .blog_main .blog_flex .blog_ri .btn a{
+        margin: 30px 100px;
+    }
+    /* ===========section 7================ */
+    /* section 7 inherit form min width 768px */
+    /* =============section 8==================== */
+    /* section 8 inherit form style.css */
+    /* ============section 9================= */
+    footer .text p{
+        width: 60%;
+    }
+    /* ============section 10================= */
+    /* .copy_right .row{
+        gap: 0px;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 0px;
+    } */
+    /* ============section 10================= */
+    .copy_right .row{
+        gap: 320px;
+        flex-direction: row;
+        justify-content: end;
+        padding-bottom: 0px;
+    }
+}

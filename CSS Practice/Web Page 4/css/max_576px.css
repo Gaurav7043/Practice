@@ -1,0 +1,96 @@
+@media (max-width : 576px) {
+    /* ========common css============ */
+    .container {
+        margin: 0px 10px;
+    }
+    /* =========header============= */
+    header .flex_box .nav ul{
+        display: none;
+    }
+    header .flex_box .icon{
+        display: none;
+    }
+    header .flex_box .bars a{
+        display: block;
+    }
+    /* =================section 2=============== */
+    .home_page .home_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .home_page .home_box .text h2{
+        color: #fff;
+    }
+    /* ===========section 3============= */
+    .our .txt{
+        font-size: 20px;
+    }
+    .our .grid_box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        margin: 0px 65px;
+    }
+    /* =============section 4=================== */
+    .shop .shop_main .images{
+        padding-left: 0px;
+    }
+    .shop .shop_main .images img{
+        padding-top: 10px;
+    }
+    .shop .shop_main .text_info{
+        width: 470px;
+        top: 240px;
+    }
+    .shop .shop_main .text_info .btn{
+        margin-bottom: 0px;
+    }
+    /* =================section 5============= */
+    .customers{
+        margin-top: 400px;
+        background: rgb(208,125,107,.6);
+        background-size: cover;
+    }
+    .customers .text{
+        font-size: 25px;
+    }
+    .customers .cust_main .cust_flex{
+        display: block;
+        padding-top: 50px;
+    }
+    .customers .cust_main .cust_flex .cust_left {
+        padding-left: 0px;
+    }
+    .customers .cust_main .cust_flex .cust_right p{
+        width: 100%;
+        font-size: 18px;
+        color: #3b3b3b;
+    }
+    /* =============section 6============== */
+    .blog .blog_main .blog_flex{
+        flex-direction: column;
+    }
+    /* ============section 7============ */
+    .get .get_flex{
+        margin-left: 0px;
+    }
+    .get .get_flex .get_left .inpu{
+        width: 100%;
+        margin: 0px;
+    }
+    /* =============section 8==================== */
+    /* section 8 inherit form style.css */
+    /* ============section 9================= */
+    footer .text p{
+        width: 100%;
+        font-size: 18px;
+    }
+    footer .text .form{
+        width: 100%;
+    }
+    /* ============section 10================= */
+    .copy_right .row{
+        gap: 0px;
+        justify-content: center;
+    }
+}

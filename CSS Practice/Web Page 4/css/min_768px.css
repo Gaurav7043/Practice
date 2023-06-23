@@ -1,0 +1,90 @@
+@media (min-width : 768px) {
+    /* ========common css============ */
+    .container {
+        margin: 0px 50px;
+    }
+    /* =========header============= */
+    header .flex_box .nav ul{
+        display: flex;
+    }
+    header .flex_box .bars a{
+        display: none;
+    }
+    /* =================section 2=============== */
+    .home_page .home_box{
+        display: flex;
+        flex-direction: row;
+    }
+    .home_page .home_box .text h2{
+        color: #e38773;
+    }
+    .home_page .home_box .btn1, .btn2{
+        width: 102px;
+    }
+    /* ===========section 3============= */
+    .our .txt{
+        font-size: 40px;
+    }
+    .our .grid_box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 0px 0px;
+    }
+    /* =============section 4=================== */
+    .shop .shop_main .images img{
+        padding-top: 70px;
+    }
+    .shop .shop_main .text_info{
+        top: 0px;
+    }
+    .shop .shop_main .text_info p{
+        padding-bottom: 10px;
+    }
+    /* =================section 5============= */
+    .customers{
+        background-image: url(../images/client-bg.png);
+        width: 100%;
+        height: auto;
+        background-size: 100% 100%;
+        padding-bottom: 50px;
+        padding-top: 100px;
+        margin-top: 0px;
+    }
+    .customers .text{
+        font-size: 40px;
+    }
+    .customers .cust_main .cust_flex{
+        display: flex;
+        padding-top: 30px;
+    }
+    .customers .cust_main .cust_flex .cust_left {
+        padding-left: 50px;
+    }
+    .customers .cust_main .cust_flex .cust_right p{
+        width: 75%;
+        font-size: 20px;
+    }
+    /* ==================section 6================= */
+    /* section 6 inhherit form min width 576px */
+    /* ============section 7============ */
+    .get .get_flex{
+        margin-left: 90px;
+    }
+    .get .get_flex .get_left .inpu{
+        width: 80%;
+        margin: 0px auto;
+    }
+    /* =============section 8==================== */
+    /* section 8 inherit form style.css */
+    /* ============section 9================= */
+    footer .text p{
+        width: 100%;
+        font-size: 20px;
+    }
+    footer .text .form{
+        width: 50%;
+    }
+    /* ===========section 10=================== */
+    /* section 10 inherit form min 576px */
+}

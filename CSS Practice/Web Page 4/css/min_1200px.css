@@ -1,0 +1,35 @@
+@media (min-width : 1200px) {
+    /* ========common css============ */
+    .container {
+        margin: 0px 80px;
+    }
+    /* =========header============= */
+    /* header  inherit form min width 992px */
+    /* =================section 2=============== */
+    /* section 2 inherit form min width 992px */
+    /* ===========section 3============= */
+    /* section 3 inherit form min width 992px */
+    /* ===============section 4============== */
+    .shop .shop_main .text_info p{
+        padding-bottom: 60px;
+    }
+    .shop .shop_main .text_info .btn{
+        margin-bottom: 35px;
+    }
+    /* ==================section 5=============== */
+    /* section 5 inherit form min width 992px */
+    /* ====================section 6=================== */
+    .blog .blog_main .blog_flex .blog_ri .btn a{
+        margin: 30px 160px;
+    }
+    /* ==============section 6============= */
+    /* section 6 inherit form min width 992px */
+    /* =============section 8==================== */
+    /* section 8 inherit form style.css */
+    /* ============section 9================= */
+    /* section 9 inherit from min width 992px */
+    /* ============section 10================= */
+    .copy_right .row{
+        gap: 440px;
+    }
+}

@@ -1,0 +1,88 @@
+@media (min-width : 1200px) {
+    /* =============header============ */
+    /* header inherit in min 992px */
+    /* =============home_page=========== */
+    .homepage .page {
+        color: white;
+        padding: 12em 0px 80px 0px;
+        margin: 0px 100px;
+    }
+    .homepage .page h1 {
+        padding: 20px 0px 20px 0px;
+        font-size: 70px;
+        width: 80%;
+    }
+    .homepage .grid-1 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin: 0px 100px;
+    }
+    .homepage .nav-bar .nav {
+        flex: 1.5;
+    }
+    .homepage .nav-bar {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        width: 97%;
+    }
+    /* ============stop violence============= */
+    /* stop violence inherit in min 992px */
+    /* =====================prevent violence========================== */
+    /* prevent violence inherit in min 992px */
+    /* ==============human_right============== */
+    .human .text {
+        top: 450px;
+        left: 60px;
+    }
+    /* ==========trust================ */
+    /* trust inherit in min 992px */
+    /* =============placidity================= */
+    .placidity .container {
+        margin: 0px 100px;
+    }
+    .placidity .dity_p {
+        padding: 50px 0px;
+    }
+    /* ============donate_us=============== */
+    /* donate_us inherit in min 992px */
+    /* ==================gallery===================== */
+    .gallery .container {
+        margin: 0px 130px;
+    }
+    .gallery .gallery_p {
+        padding: 80px 0px;
+    }
+    .gallery .gallery_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .gallery .gallery_grid .images h3 {
+        position: absolute;
+        top: 262px;
+    }
+    /* ==================talent_team======================= */
+    /* talent inherit in min 992px */
+    /* ==============testimonials==================== */
+    .textimonials .container {
+        margin: 90px 130px;
+    }
+    .textimonials .monials_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin-top: 100px;
+    }
+    .textimonials .monials_box .grid_box img {
+        top: -25%;
+    }
+    /* =================================footer============================== */
+    footer .foot-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /* ==========section 10================== */
+    /* section 10 inherit in min 992px */
+}
