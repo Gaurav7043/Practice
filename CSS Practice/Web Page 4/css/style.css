@@ -595,6 +595,10 @@ footer .text .form .btn a img{
 }
 .copy_right .row .txt p a{
     color: white;
+    transition: 1s all ease-in-out;
+}
+.copy_right .row .txt p a:hover{
+    color: #363636;
 }
 .copy_right .row .box .social_icon ul{
     display: flex;
