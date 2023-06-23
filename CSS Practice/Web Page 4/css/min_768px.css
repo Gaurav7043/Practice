@@ -25,12 +25,6 @@
     .our .txt{
         font-size: 40px;
     }
-    .our .grid_box{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        margin: 0px 0px;
-    }
     /* =============section 4=================== */
     .shop .shop_main .images img{
         padding-top: 70px;
