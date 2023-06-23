@@ -612,4 +612,8 @@ footer .text .form .btn a img{
     width: 44px;
     text-align: center;
     margin-top: 10px;
+    transition: 1s all ease-in-out;
+}
+.social_icon li a:hover {
+    color: #363636;
 }
