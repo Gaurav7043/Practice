@@ -476,6 +476,11 @@ textarea:focus{
     display: block;
     font-weight: 700;
     border-radius: 5px;
+    transition: 1s all ease-in-out;
+}
+.get .get_flex .get_left .inpu .btn a:hover{
+    background-color: #4a4949;
+    transition: 1s all ease-in-out;
 }
 /* ===========section 8=================== */
 .map{
