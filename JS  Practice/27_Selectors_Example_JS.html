@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Example</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p class="p4"></p>
+    <p class="p5"></p>
+    <p class="p6"></p>
+    <div></div>
+    <script>
+        document.getElementById("p1").innerText = "<i> hello user, we learn js </i>"
+        document.getElementById("p2").innerHTML = "<i> hello user, we learn js </i>"
+        document.querySelector("#p3").innerText = "Queryselector by Id"
+        document.querySelector(".p4").innerText = "Queryselector by class"
+        document.querySelector(".p5, .p6").innerText = "Queryselector by group"
+        document.querySelector("div").innerText = "Queryselector by element"
+    </script>
+</body>
+</html>

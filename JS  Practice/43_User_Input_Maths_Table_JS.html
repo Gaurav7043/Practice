@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Maths Table</title>
+    <style>
+        .div1{
+            height: auto;
+            width: 250px;
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter a Table No. :-</label>
+        <input type="text" id="userinp">
+        <button onclick="return displ_table_fn()">Display Table</button>
+    </form>
+    <div class="div1"></div>
+
+    <script>
+        function displ_table_fn(){
+            var table = document.getElementById("userinp").value;
+            var div = document.querySelector(".div1");
+            if(table == "" || table == null){
+                alert("Enter Value")
+            }else{
+                var res = "";
+                for(let i = 1; i <= 10; i++){
+                    res = res + "<p>" + table + "*" + i + "=" + (table*i) + "</p>"
+                }
+                div.innerHTML = res;
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    <!-- prompt can take input from user -->
+    <button onclick="return promp_fn()">Click here</button>
+    <h1>Welcome, <span id="msg"></span></h1>
+    <script>
+        function promp_fn(){
+            var pro = prompt("Enter Your Name :- ");
+            if(pro == ""){
+                alert("Enter Name");
+            }else{
+                // alert(pro);
+                document.getElementById("msg").innerText = pro;
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

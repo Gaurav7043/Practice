@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Function</title>
+</head>
+<body>
+    <!-- object = logical or physical items -->
+    <script>
+        let person = {
+            First_Name : "Gaurav",
+            Last_Name : "Gupta",
+            D_O_B : "25-11-2000",
+            Mobile_No : 7402843741, 
+        }
+        console.log(person);
+
+        // print single value 
+        document.write("First Name :- " + person.First_Name + "<br>");
+        document.write("Last Name :- " + person.Last_Name + "<br>");
+        document.write("Date of Birth :- " + person.D_O_B + "<br>");
+        document.write("Mobile No. :- " + person.Mobile_No + "<br>");
+
+        // to print object use for..in loop
+        // for (const per in person) {
+        //     const element = person[per];
+        //     console.log(per + " => " + element)
+        // }
+
+        for (const per in person) {
+            console.log(per + " => " + person[per]);
+        }
+    </script>
+</body>
+</html>

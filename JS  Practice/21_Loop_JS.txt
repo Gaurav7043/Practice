@@ -1,0 +1,25 @@
+loop is a count number of iteration.
+
+there is 6 type of loop :
+(1) while loop : when condition false loop is stop.
+        while(condition){
+            statement 
+            increment/decrement
+        }
+        
+(2) do while loop 
+        do{
+            statement
+            increment/decrement
+        }while(condition)   
+
+(3) for loop 
+    for(initialization; condition; increment/decrement){
+        statement
+    }
+
+    initialization means declaration
+
+(4) for in loop (object)
+(5) for of loop (array)
+(6) foreach loop (array)

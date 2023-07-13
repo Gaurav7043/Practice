@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listener</title>
+    <script>
+        // create a multiple use
+        function simple_fn(){
+            alert("Hello User, We Learn Normal Function")
+        }
+    </script>
+</head>
+<body>
+    <button onclick="simple_fn()">With Normal Function</button>
+    <button id="btn">With Add Event Listener</button>
+
+    <!-- write add event listener code (add) bottom / end of the body -->
+    <script>
+        // use for atleast 1 time
+        let a = document.getElementById("btn");
+        a.addEventListener("click", function(){
+            alert("Hello User, We Learn Add Event Listener");
+        })
+    </script>
+</body>
+</html>

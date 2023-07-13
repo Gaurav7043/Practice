@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+    <style>
+        span{
+            color: red;
+        }
+        #msg_1{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter Email : </label>
+        <input type="text" id="mail" onblur="return e_mail_check()" onkeyup="return check_e_mail()">
+        <button onclick="return e_mail_check()">Click Here</button>
+    </form>
+    <p>Entered Value is : <span id="msg"></span><span id="msg_1"></span></p>
+
+    <script>
+        // click and blur (when use press tab)
+        function e_mail_check(){
+            let mail = document.getElementById("mail").value;
+            if(mail == "" || mail == null){
+                document.getElementById("msg").innerText = "Enter Mail";
+                return false;
+            }else{
+                document.getElementById("msg_1").innerText = mail;
+                return false;
+            }
+        }
+
+        // keyboard event
+        function check_e_mail(){
+            let mail = document.getElementById("mail").value;
+            // take a reg expression from w3resource.com
+            // link => https://www.w3resource.com/javascript/form/email-validation.php
+            let regeX = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{3})+$/;
+            if(regeX.test(mail)){
+                document.getElementById("msg").innerText = "";
+                return false;
+            }else{
+                document.getElementById("msg").innerText = "Enter valid Email";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

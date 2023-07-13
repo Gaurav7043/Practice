@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Validation</title>
+    <style>
+        span{
+            color: red;
+        }
+        div{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">City : </label>
+        <select name="" id="city" onblur="return option_fn()">
+            <option value="-1">-----Select-----</option>
+            <option value="">Surat</option>
+            <option value="">Bharuch</option>
+            <option value="">Vadodara</option>
+            <option value="">Godhra</option>
+        </select>
+        <span id="msg"></span>
+        <div>
+            <button onclick="return option_fn()">Click Here</button>
+        </div>
+    </form>
+
+    <script>
+        function option_fn(){
+            let city = document.getElementById("city").value;
+            if(city == "-1"){
+                document.getElementById("msg").innerText = "Select City";
+                return false;
+            }else{
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

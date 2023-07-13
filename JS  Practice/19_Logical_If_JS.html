@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical If</title>
+</head>
+<body>
+    <script>
+        var num1 = 63, num2 = 63, num3 = 63;
+        if(num1 > num2 && num1 > num3){
+            document.write(num1 + " is max");
+        }else if(num2 > num1 && num2 > num3){
+            document.write(num2 + " is max");
+        }else if(num3 > num1 && num3 > num2){
+            document.write(num3 + " is max");
+        }else{
+            document.write("All are Equal");
+        }
+
+        // 2 value are same
+        // var a = 8, b = 80, c = 76;
+        // document.writeln("<br> Number 1 : " + a);
+        // document.writeln("<br> Number 2 : " + b);
+        // document.writeln("<br> Number 3 : " + c);
+        // if(a >= b && a >= c){
+        //     document.write("Two Number alllare Equal");
+        //     if(a > b && a > c){
+        //         document.write("<br>" + a + " is max")
+        //     }
+        // }else if(b >= a && b >= c){
+        //     document.write("Two Number are Equal");
+        //     if(b > a && b > c){
+        //         document.write("<br>" + b + " is max")
+        //     }
+        // }else if(c >= a && c >= b){
+        //     document.write("Two Number are Equal");
+        //     if(c > a && c > b){
+        //         document.write("<br>" + c + " is max");
+        //     }
+        // }else{
+        //     document.write("All are Equal");
+        // }
+    </script>
+</body>
+</html>

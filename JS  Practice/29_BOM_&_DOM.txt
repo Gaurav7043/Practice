@@ -1,0 +1,5 @@
+BOM => Browser Object Model.
+
+DOM => Document Object Model.
+
+DOM is a part of BOM

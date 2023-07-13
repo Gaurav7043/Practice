@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Validation</title>
+    <style>
+        span{
+            color: red;
+        }
+        div{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Gender : </label>
+        <input type="radio" name="radio1" id="male" onblur="return check_radio()">
+        <label for="">Male</label>
+        <input type="radio" name="radio1" id="female" onblur="return check_radio()">
+        <label for="">Female</label>
+        <input type="radio" name="radio1" id="other" onblur="return check_radio()">
+        <label for="">Other</label>
+        <span id="msg"></span>
+        <div>
+            <button onclick="return check_radio()">Click Here</button>
+        </div>
+    </form>
+
+    <script>
+        function check_radio(){
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+            let other = document.getElementById("other").checked;
+            if(male == false && female == false && other == false){
+                document.getElementById("msg").innerText = "Select Gender";
+                return false;
+            }else{
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

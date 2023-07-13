@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical</title>
+</head>
+<body>
+    <!-- &&, ||, ! -->
+    <script>
+        var x = 11;
+        var res;
+        // &&(and) me dono condision sahi honi chaiya
+        // yeh pehali first value he check karega agar 1st value sahi hai toh true print karega agar galat hogi toh voh false print karega
+        res = (x > 10 && x < 20)
+        console.log(res);
+        // 1st   2nd   res
+        // true  false  false
+        // false true   false 
+        // true  true   true
+        // false false  false
+
+        // ||(or) me dono mese ek conditision sahi honi chaiya
+        // yeh dono value ko check karega agar do mese ek value bhi agar sahi hai toh yeh true print karega or agar dono value galat ho toh yeh false print karega
+        res = (x > 10 || x < 20)
+        console.log(res);
+        // 1st   2nd   res
+        // true  false  true
+        // false true   true 
+        // true  true   true
+        // false false  false
+
+        // !(not) ulta value print karta hai
+        res = (!(x > 10))
+        console.log(res);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <button onclick="normal()">Simple Function</button>
+    <button id="arrow">Arrow Function</button>
+    <script>
+        function normal(){
+            alert("Hello User");
+        }
+
+        let btn = document.getElementById("arrow");
+        btn.addEventListener("click", ()=>{
+            alert("Hello User");
+        })
+    </script>
+</body>
+</html>

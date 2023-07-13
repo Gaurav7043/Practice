@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Box Validation</title>
+    <style>
+        span{
+            color: red;
+        }
+        div{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Subject : </label>
+        <input type="checkbox" id="box_1" onblur="return check_Box()">
+        <label for="">HTML</label>
+        <input type="checkbox" id="box_2" onblur="return check_Box()">
+        <label for="">CSS</label>
+        <input type="checkbox" id="box_3" onblur="return check_Box()">
+        <label for="">Java Script</label>
+        <span id="msg"></span>
+        <div>
+            <button onclick="return check_Box()">Click Here</button>
+        </div>
+    </form>
+
+    <script>
+        function check_Box(){
+            let box_1 = document.getElementById("box_1").checked;
+            let box_2 = document.getElementById("box_2").checked;
+            let box_3 = document.getElementById("box_3").checked;
+            if(box_1 == false && box_2 == false && box_3 == false){
+                document.getElementById("msg").innerText = "Select Subject";
+                return false;
+            }else{
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

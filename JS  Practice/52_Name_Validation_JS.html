@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Validation</title>
+    <style>
+        span{
+            color: red;
+        }
+        button{
+            cursor: pointer;
+        }
+        .pan{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter Your Name : </label>
+        <input type="text" name="" id="u_name" maxlength="35px" onblur="return check_name()" onkeyup="return check_name_1()">
+        <button onclick="return check_name()">Click Here</button>
+    </form>
+    <p>Entered Name is : <span class="pan" id="msg1"></span><span id="msg"></span></p>
+
+    <script>
+        // click and blur (when use press tab)
+        function check_name(){
+            let user = document.getElementById("u_name").value;
+            if(user == "" || user == null){
+                document.getElementById("msg").innerText = "Enter Name";
+                return false;
+            }else{
+                document.getElementById("msg1").innerText = user;
+                return false;
+            }
+        }
+
+        // keyboard event
+        function check_name_1(){
+            let user = document.getElementById("u_name").value;
+            // test(), match()
+            // isNaN = not a number
+            // if(isNaN(user) == true)
+            let regeX = /^[a-zA-Z]+$/
+            if(!(user.match(regeX))){
+                document.getElementById("msg").innerText = "Invalid Value";
+                return false;
+            }else if(user.length < 2){
+                document.getElementById("msg").innerText = "Enter Proper Name"
+                return false;
+            }
+            else{
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

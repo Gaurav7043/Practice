@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open & Close</title>
+    <!-- <script>
+        function open_fn(){
+            var a = "file:///C:/Users/Dell/Desktop/Front%20End/js%20ptr/33_Promp_JS.html"
+            open = window.open(a);
+        }
+        function close_fn(){
+            open.window.close();
+        }
+    </script> -->
+</head>
+<body>
+    <button onclick="open_fn()">Open</button>
+    <button onclick="close_fn()">Close</button>
+    <button onclick="forward_fn()">Forward</button>
+
+    <script>
+        var open_link = "file:///C:/Users/Dell/Desktop/Front%20End/js%20ptr/33_Promp_JS.html";
+        var close_link;
+        function open_fn(){
+            close_link = window.open(open_link);
+        }
+        function close_fn(){
+            close_link.window.close();
+        }
+        function forward_fn(){
+            window.history.forward();
+        }
+    </script>
+</body>
+</html>

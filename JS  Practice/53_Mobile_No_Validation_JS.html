@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile No Validation</title>
+    <style>
+        span{
+            color: red;
+        }
+        #msg_1{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter Mobile No. : </label>
+        <input type="text" name="" id="mob" maxlength="10" onblur="return check_Mno()" onkeyup="return mno_check()">
+        <button onclick="return check_Mno()">Click Here</button>
+    </form>
+    <p>Entered Mobile is : <span id="msg"></span><span id="msg_1"></span></p>
+
+    <script>
+        // click and blur (when use press tab)
+        function check_Mno(){
+            let mob = document.getElementById("mob").value;
+            if(mob == "" || mob == null){
+                document.getElementById("msg").innerText = "Enter Mobile No.";
+                return false;
+            }else{
+                document.getElementById("msg_1").innerText = mob;
+                return false;
+            }
+        }
+
+        // keyboard event
+        function mno_check(){ 
+            let mob = document.getElementById("mob").value;
+            let regx = /^[0-9]*$/;
+            let start = /^[6-9]/;
+            // test()
+            if(!(regx.test(mob)) || (!(start.test(mob)))){
+                document.getElementById("msg").innerText = "Enter Proper Number";
+                return false;
+            }else if(mob.length < 10){
+                document.getElementById("msg").innerText = "Enter 10 Digits";
+                return false;
+            }else{
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

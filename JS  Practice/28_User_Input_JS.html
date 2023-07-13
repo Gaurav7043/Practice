@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter Any Value :- </label>
+        <input type="text" id="userinp">
+        <button onclick="return user_fn()">Click Here</button>
+    </form>
+    <p>Enter Value are :- <span id="msg"></span></p>
+
+    <script>
+        function user_fn(){
+            var user = document.getElementById("userinp").value;
+            document.getElementById("msg").innerText = user;
+            return false;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Function</title>
+</head>
+<body>
+    <!-- in variable it take at a time only one value
+        but array take a multiple value at a time
+    -->
+    <!-- array is a name of memory location / collection of data -->
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        let arr = ["HTML", "CSS", "JS", "Jquery", "Bootstrap", "Adv. JS", "Recat JS"];
+        document.getElementById("p1").innerHTML = arr;
+
+        // print array directly
+        document.writeln(arr[0]);
+        document.writeln(arr[1]);
+        document.writeln(arr[2]);
+        document.writeln[arr[3]];
+        document.writeln(arr[4]);
+        document.writeln(arr[5]);
+        document.writeln(arr[6]);
+        document.write("<br>=======================")
+
+        // using for of loop to print array
+        let a
+        for (a of arr) {
+            document.write("<br>" + a);
+        }
+    </script>
+</body>
+</html>

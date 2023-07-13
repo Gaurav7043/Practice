@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Function</title>
+</head>
+<body>
+    <h3 id="full_date"></h3>
+    <h3 id="date"></h3>
+    <h3 id="time"></h3>
+    <script>
+        let dt = new Date();
+        document.getElementById("full_date").innerHTML = dt;
+        // month => 0 to 11
+        document.getElementById("date").innerHTML = dt.getDate() + "-" + (dt.getMonth() + 1) + "-" + dt.getFullYear();
+        document.getElementById("time").innerHTML = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+    </script>
+</body>
+</html>

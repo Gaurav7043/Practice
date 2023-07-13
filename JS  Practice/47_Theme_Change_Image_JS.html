@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Change Image</title>
+    <style>
+        .dark{
+            background-color: #282828;
+            color: white;
+        }
+        .dark h1 a{
+            text-decoration: none;
+            color: chocolate;
+        }
+        img{
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="theme">
+        <img src="image/moon-removebg-preview.png" alt="" id="icon">
+    </div>
+    <h1>
+        Hello User,
+        <a href="">Click Here</a>
+    </h1>
+
+    <script>
+        let icon = document.getElementById("icon");
+        icon.addEventListener("click", function(){
+            document.body.classList.toggle("dark");
+            if(document.body.classList.contains("dark") == true){
+                icon.src = "image/sun_1-removebg-preview.png"
+            }else{
+                icon.src = "image/moon-removebg-preview.png"
+            }
+        })
+    </script>
+</body>
+</html>

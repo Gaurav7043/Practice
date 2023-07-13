@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+    <!-- <script>
+        function confirm_fn(){
+            if(confirm("Click on Any Button") == true){
+                alert("Click on Ok");
+            }else{
+                alert("Click on Cancel");
+            }
+        }
+    </script> -->
+</head>
+<body>
+    <button onclick="confirm_fn()">Click Here</button>
+
+    <script>
+        function confirm_fn(){
+            var conf = confirm("Click to Perform Task...");
+            if(conf == true){
+                alert("Click on Ok");
+            }else{
+                alert("Click on Cancel");
+            }
+        }
+    </script>
+</body>
+</html>

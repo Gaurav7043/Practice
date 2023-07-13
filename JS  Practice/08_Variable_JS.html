@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+     <!-- variable is a container to store data / value. -->
+    <!-- it is a name of memory location -->
+
+    <!-- there is 3 keywords are used to create a variable.
+        let, var and const
+        
+        valid name => myvar, myVar, MyVar, MYVAR, my_var, myvar1
+        invalid name => 1myvar, my-var, do not use special character
+    -->
+    <script>
+        // using var kryword you can redeclare and reassing value.
+        // it is a global keyword.
+        // programing language ka hisava se redeclar allow nhi karta hai
+        // lakin javascript redeclare allow karta hai
+        // redeclare means ek keyword ka saath, ek he variable ko 2 time declare karna
+        var a = 12;
+        document.writeln("a value is :- " + a + "<br>");
+
+        var a = 13;
+        document.writeln("a value is :- " + a + "<br>");
+
+        // in version 2015, introuduced let and const keyword
+        // using let keyword you can reassign value but not redeclare.
+        // let and const as block level keyword
+        let b = 35;
+        document.writeln("b value is :- " + b + "<br>");
+
+        b = 35;
+        document.writeln("b value is :- " + b + "<br>");
+        
+        // const means constant which has fixed value.
+        // using const keyword you can not redeclare or reassing value.
+        const c = 3.14;
+        document.writeln("c value is :- " + c + "<br>");
+        // c = 32;
+        // document.writeln("c value is " + C);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changing</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+        .dark{
+            background-color: rgba(0, 0, 0, 0.557);
+            color: white;
+        }
+        .bi{
+            font-size: 29px;
+        }
+        .dark a{
+            color: chocolate;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <i class="bi bi-moon"></i>
+        <h1>
+            Hello User, <a href="">Click Here</a>
+        </h1>
+    </div>
+    
+    <script>
+        let mode = document.querySelector(".bi-moon");
+        mode.addEventListener("click",function(){
+            document.body.classList.toggle("dark");
+            if(document.body.classList.contains("dark") == true){
+                mode.classList.remove("bi-moon");
+                mode.classList.add("bi-brightness-high");
+            }else{
+                mode.classList.remove("bi-brightness-high");
+                mode.classList.add("bi-moon");
+            }
+        })
+    </script>
+</body>
+</html>
