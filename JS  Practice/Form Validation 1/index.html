@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(22, 226, 56);
+        }
+        .msg{
+            color: red;
+        }
+        .reg{
+            width: 65%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 20px gray;
+        }
+        h3{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .row{
+            display: grid;
+            gap: 50px;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            place-content: center;
+            padding: 5px;
+        }
+        .col_1{
+            text-align: end;
+        }
+        input[type = "text"],[type = "date"],[type = "password"],select{
+            height: 30px;
+            width: 100%;
+            padding: 0px 0px 0px 10px;
+        }
+        input:focus-visible{
+            outline: none;
+        }
+        .male{
+            padding: 0px 20px 0px 0px;
+        }
+        textarea{
+            padding: 10px 0px 0px 10px;
+            width: 100%;
+        }
+        button{
+            background-color: blue;
+            margin: 15px auto;
+            color: white;
+            padding: 12px 50px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 17px;
+            cursor: pointer;
+            border: 1px solid blue;
+        }
+        button:hover{
+            background-color: rgb(0, 0, 170);
+            border: 1px solid blue;
+        }
+        .pass_icon {
+            position: relative;
+        }
+        .pass_icon .icon {
+            position: absolute;
+            top: 7px;
+            right: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="reg">
+        <h3>Registration for Job</h3>
+        <form action="">
+            <!-- 1st box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">First Name</label>
+                </div>
+                <div class="col_2">
+                    <input type="text" name="" id="f_name" onblur="return click_blan(this, 'msg_1')" onkeyup="return name_fn(this, 'msg_1')">
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_1"></span>
+                </div>
+            </div>
+
+            <!-- 2nd box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Middle Name</label>
+                </div>
+                <div class="col_2">
+                    <input type="text" id="m_name" onblur="return click_blan(this, 'msg_2')" onkeyup="return name_fn(this, 'msg_2')">
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_2"></span>
+                </div>
+            </div>
+
+            <!-- 3rd box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Last Name</label>
+                </div>
+                <div class="col_2">
+                    <input type="text" id="l_name" onblur="return click_blan(this, 'msg_3')" onkeyup="return name_fn(this, 'msg_3')">
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_3"></span>
+                </div>
+            </div>
+
+            <!-- 4th box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Address</label>
+                </div>
+                <div class="col_2">
+                    <textarea name="" id="add" cols="48" rows="5" maxlength="250" onblur="return click_blan(this, 'msg_4')" onkeyup="return adde_fn()"></textarea>
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_4"></span>
+                </div>
+            </div>
+            
+            <!-- 5th box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Date of Birth</label>
+                </div>
+                <div class="col_2">
+                    <input type="date" id="dob" onblur="return click_blan(this, 'msg_5')">
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_5"></span>
+                </div>
+            </div>
+            
+            <!-- 6th box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Gender</label>
+                </div>
+                <div class="col_2">
+                    <input type="radio" name="gen" id="male" onblur="return gend_check(this, 'msg_6')">
+                    <label for="" class="male">Male</label>
+                    <input type="radio" name="gen" id="female" onblur="return gend_check(this, 'msg_6')">
+                    <label for="">Female</label>
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_6"></span>
+                </div>
+            </div>
+
+            <!-- 7th box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">City</label>
+                </div>
+                <div class="col_2">
+                    <select onblur="return click_blan(this, 'msg_7')" id="ct">
+                        <option value="-1">---Select---</option>
+                        <option value="">Surat</option>
+                        <option value="">Bhopal</option>
+                        <option value="">Delhi</option>
+                        <option value="">Mumbai</option>
+                    </select>
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_7"></span>
+                </div>
+            </div>
+
+            <!-- 8th box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Mobile No.</label>
+                </div>
+                <div class="col_2">
+                    <input type="text" id="mob" onblur="return click_blan(this, 'msg_8')" maxlength="10" onkeyup="return mob_fn(this, 'msg_8')">
+                </div>
+                <div class="col_8">
+                    <span class="msg" id="msg_8"></span>
+                </div>
+            </div>
+
+            <!-- 9th box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Email</label>
+                </div>
+                <div class="col_2">
+                    <input type="text" name="" id="mail" onblur="return click_blan(this, 'msg_9')" onkeyup="return mail_fn()">
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_9"></span>
+                </div>
+            </div>
+
+            <!-- 10th box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Create Password</label>
+                </div>
+                <div class="col_2 pass_icon">
+                    <input type="password" name="" id="pass" onblur="return click_blan(this, 'msg_10')" maxlength="15" onkeyup="return pass_fn()">
+                    <span class="fa-solid fa-eye icon" id="icon_1" onclick="return show_pass()"></span>
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_10"></span>
+                </div>
+            </div>
+
+            <!-- 11th box -->
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Create Confirm Password</label>
+                </div>
+                <div class="col_2 pass_icon">
+                    <input type="password" name="" id="c_pass" onblur="return click_blan(this, 'msg_11')" maxlength="15" onkeyup="return pass_compare()">
+                    <span class="fa-solid fa-eye icon" id="icon_2" onclick="return c_pass()"></span>
+                </div>
+                <div class="col_3">
+                    <span class="msg" id="msg_11"></span>
+                </div>
+            </div>
+
+            <!-- button box -->
+            <div class="row">
+                <div class="col_1"></div>
+                <div class="col_2">
+                    <button onclick="return click_fn()">Register</button>
+                </div>
+                <div class="col_3"></div>
+            </div>
+        </form>
+    </div>
+
+    <!-- script cdn -->
+    <script src="script.js"></script>
+</body>
+</html>
