@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade Function</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 20px;
+        }
+        .head_1, .head_2, .head_3{
+            height: 150px;
+            width: 150px;
+            color: white;
+        }
+        .head_1{
+            display: none;
+            background-color: blue;
+        }
+        .head_2{
+            display: block;
+            background-color: brown;
+        }
+        .head_3{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- fade function worked opacity
+        => fadeIn(), fadeOut(), fadeToggle(), fadeTo()
+        fadeIn() = display value 
+        fadeOut() = hide value 
+        fadeToggle() = display or hide both 
+        fadeTo() = set opacity
+    -->
+    <button id="btn1">Fade In</button>
+    <button id="btn2">Fade Out</button>
+    <button id="btn3">Fade Toggle</button>
+    <button id="btn4">Fade To</button>
+    <button id="btn5">Fade To</button>
+
+    <hr>
+    <div class="main">
+        <div class="head_1">Div 1</div>
+        <div class="head_2">Div 2</div>
+        <div class="head_3">Div 3</div>
+    </div>
+
+    <!-- jqurey external cdn file  -->
+    <!-- online package cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){-
+            $("#btn1").click(function(){
+                $(".head_1").fadeIn(2000);
+            })
+            $("#btn2").click(function(){
+                $(".head_1").fadeOut(2000);
+            })
+            $("#btn3").click(function(){
+                $(".head_2").fadeToggle(2000);
+            })
+            // fadeTo set an opacity
+            $("#btn4").click(function(){
+                $(".head_3").fadeTo(2000, 0.5);
+            })
+            $("#btn5").click(function(){
+                $(".head_3").fadeTo(2000, 1);
+            })
+        })
+    </script>
+</body>
+</html>

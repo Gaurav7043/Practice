@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel</title>
+    <!-- jquery_owl_carousel_css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        .container{
+            margin: 0px 80px;
+        }
+        img{
+            height: 250px;
+            /* width: 400px; */
+        }
+        .owl-theme .owl-nav {
+            margin-top: 0px;
+        }
+        .owl-carousel .owl-nav button.owl-prev{
+            padding: 0px 15px 6px 15px !important;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            font-size: 50px;
+            position: absolute;
+            left: 0;
+            margin: -71px;
+            top: 165px;
+            transition: 1s all ease-in-out;
+        }
+        .owl-carousel .owl-nav button.owl-next{
+            padding: 0px 15px 6px 15px !important;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            font-size: 50px;
+            position: absolute;
+            right: 0;
+            margin: -71px;
+            top: 165px;
+            transition: 1s all ease-in-out;
+        }
+        .owl-theme .owl-nav [class*=owl-]:hover {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="owl-carousel owl-theme">
+            <div class="image">
+                <img src="image/1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/2.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/3.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/4.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/5.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/6.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/7.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/8.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/9.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="image/10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- owl_Carousel script cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots : false,
+                autoplay : true,
+                autoplayTimeout : 3000,
+                autoplayHoverPause : true,
+                responsive:{
+                    0 : {
+                        items: 1
+                    },
+                    500 : {
+                        items: 2
+                    },
+                    750 : {
+                        items: 3
+                    },
+                    1000 : {
+                        items: 4
+                    },
+                    1200:{
+                        items : 5
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>

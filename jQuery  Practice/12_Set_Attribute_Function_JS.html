@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Attribute Function</title>
+</head>
+<body>
+    <!-- there is 3 function to get or set attribute 
+        text() html() and val()
+    -->
+    <button id="btn_1">Text</button>
+    <button id="btn_2">HTML</button>
+    <button id="btn_3">Value</button>
+    <hr>
+    <p id="p1">This is my Paragraph</p>
+    <input type="text" name="" id="" value="Hello User">
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn_1").click(function(){
+                $("#p1").text("Hello User, We Learn jQuery Function");
+            })
+            $("#btn_2").click(function(){
+                $("#p1").html("<i>This is Jquery Function</i>")
+            })
+            $("#btn_3").click(function(){
+                $("input").val("Good Morning");
+            })
+        })
+    </script>
+</body>
+</html>

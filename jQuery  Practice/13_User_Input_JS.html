@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input</title>
+</head>
+<body>
+    <form action="#">
+        <label for="">Enter Any Value : </label>
+        <input type="text" id="userinp">
+        <button id="btn_1">Click Here</button>
+    </form>
+    <p>Enter Value are : <span id="p1"></span></p>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        // user input
+        $(document).ready(function(){
+            $("#btn_1").click(function(){
+                $user = $("#userinp").val();
+                if($user == "" || $user == null){
+                    alert("Enter Value");
+                }else{
+                    $("#p1").html($user);
+                    return false;
+                }
+            })
+        })
+    </script>
+</body>
+</html>

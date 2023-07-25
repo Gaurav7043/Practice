@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+    <!-- ajax = asynchronized javascript and xml 
+        xml = extensible markup language
+        use to load external file without reloading whole page.
+    -->
+    <button id="btn">Load Ajax</button>
+    <hr>
+    <!-- <h1 id="loader"></h1> -->
+    <div class="div_1"></div>
+    
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // $("#loader").load("25_Tranversing_JS.txt");
+                $(".div_1").load("22_Owl_Carousel_JS.html");
+            })
+        })
+    </script>
+</body>
+</html>

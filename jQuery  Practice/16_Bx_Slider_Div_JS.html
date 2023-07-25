@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bx Slider Div</title>
+    <!-- jquery_bx_slider_css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .img_1 {
+            height: 500px;
+            width: 100%;
+            border-radius: 0% 50% 50% 0%;
+        }
+        .img_2 {
+            height: 500px;
+            width: 100%;
+            border-radius: 50% 0% 0% 50%;
+        }
+        .img_box {
+            display: flex;
+            background-color: cadetblue;
+        }
+        .img_box .image {
+            flex: 1;
+        }
+        .img_box .about_img {
+            flex: 1;
+            display: grid;
+            place-content: center;
+        }
+        .bx-wrapper {
+            background: none;
+            border: none;
+            box-shadow: none;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a{
+            background-color: red;
+        }
+        .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="bx_slider">
+        <div class="image_box">
+            <div class="img_box">
+                <div class="image">
+                    <img src="image/1.jpg" alt="" class="img_1">
+                </div>
+                <div class="about_img">
+                    <h1>Image 1</h1>
+                </div>
+            </div>
+        </div>
+        <div class="image_box">
+            <div class="img_box">
+                <div class="about_img">
+                    <h1>Image 2</h1>
+                </div>
+                <div class="image">
+                    <img src="image/2.jpg" alt="" class="img_2">
+                </div>
+            </div>
+        </div>
+        <div class="image_box">
+            <div class="img_box">
+                <div class="image">
+                    <img src="image/3.jpg" alt="" class="img_1">
+                </div>
+                <div class="about_img">
+                    <h1>Image 3</h1>
+                </div>
+            </div>
+        </div>
+        <div class="image_box">
+            <div class="img_box">
+                <div class="about_img">
+                    <h1>Image 4</h1>
+                </div>
+                <div class="image">
+                    <img src="image/4.jpg" alt="" class="img_2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- bx_slider script cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".bx_slider").bxSlider({
+                mode : "fade",
+                speed : 1500,
+                infiniteLoop : true,
+                captions : true,
+                pager : true,
+                // pagerType : "short",
+                // pagerShortSeparator : " - ",
+                controls : false,
+                auto : true,
+                autoHover : true,
+            })
+        })
+    </script>
+</body>
+</html>

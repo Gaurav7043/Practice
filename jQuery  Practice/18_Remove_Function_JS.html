@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Function</title>
+    <style>
+        .div_1{
+            height: auto;
+            padding: 10px;
+            width: 250px;
+            border: 2px solid black;
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <!-- remove function are : 1. empty, 2. remove -->
+    <button id="btn_1">Empty</button>
+    <button id="btn_2">Remove</button>
+    <hr>
+    <div class="div_1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, repellendus illo! Voluptates, ducimus, quisquam ipsum obcaecati perspiciatis repudiandae ipsam iusto, iure nam reiciendis quibusdam pariatur recusandae repellat commodi. Repellendus, rem.
+    </div>
+    <!-- jquery css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        // empty => contant ko remove karta hai
+        // remove => body me kuch bhi hoga unsab ko remove kar deta hai, pura heta dega
+        $(document).ready(function(){
+            $("#btn_1").click(function(){
+                $(".div_1").empty();
+            })
+            $("#btn_2").click(function(){
+                $(".div_1").remove();
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+=> jquery is a library of javascript.
+
+=> pure js code is vanilla js.
+
+=> how to work jquery functions.
+
+jquery are used in two ways => 
+(1) download offline package 
+(2) use online cdn
+
+follow website => https://jquery.com/ 
+
+version => 3.7.0
+
+syntax : =
+
+$(document).ready(function(){
+    $("selector").event(function(){
+        $("selector").jquery_function();
+    })
+})
+
+selector => class selector, id selector and element selector.
+
+sliders : (these are jquery slider library)
+bxslider, owl-carousel
+extra : swiperjs and slickjs

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimention</title>
+    <style>
+        .div_1{
+            height: 200px;
+            width: 250px;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- dimensions = height(), width(), innerHeight(), innerWidth(), outerheight(), outerwidth() -->
+    <div class="div_1"></div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $txt = ""
+            $txt = "Height : " + $(".div_1").height() + "<br>" +
+            "Width : " + $(".div_1").width() + "<br>" + 
+            "Inner Height : " + $(".div_1").innerHeight() + "<br>" + 
+            "Inner Width : " + $(".div_1").innerWidth() + "<br>" + 
+            "Outer Height : " + $(".div_1").outerHeight() + "<br>" +
+            "Outer Width : " + $(".div_1").outerWidth() + "<br>" +
+            "Outer Height : " + $(".div_1").outerHeight(true) + "<br>" +
+            "Outer Width : " + $(".div_1").outerWidth(true);
+
+            $(".div_1").html($txt);
+        })
+    </script>
+</body>
+</html>

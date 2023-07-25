@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Get Method</title>
+</head>
+<body>
+    <button id="btn">Load Ajax Get</button>
+    <div class="load_data"></div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $.get("25_Tranversing_JS.txt", function(data, textStatus){
+                    // alert(data, textStatus);
+                    // $(".load_data").html(data, textStatus);
+                    console.log("data : " + data + " Status :" + textStatus)
+                })
+            })
+        })
+    </script>
+</body>
+</html>

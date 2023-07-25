@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decendent</title>
+    <style>
+        .main, div, h1{
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .css{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click Here</button>
+    <hr>
+    <div class="main">Main Div
+        <div class="sub_div_1">Sub Div 1
+            <h1>Hello World</h1>
+        </div>
+        <div class="sub_div_2">Sub Div 2
+            <h1>Hello World</h1>
+            <b>Bold Tag</b>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // $(".main").children().addClass("css");
+                $(".main").find("h1").addClass("css");
+            })
+        })
+    </script>
+</body>
+</html>

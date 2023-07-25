@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Function</title>
+</head>
+<body>
+    <!-- add function are : 1. append, 2. prepand 3. before, 4. after -->
+    <button id="btn_1">Append</button>
+    <button id="btn_2">Prepand</button>
+    <button id="btn_3">Before</button>
+    <button id="btn_4">After</button>
+    <hr>
+    <h1>Hello User</h1>
+    <span>Hello User</span>
+    <!-- jquery css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        // append = add after
+        // prepand = add before
+        $(document).ready(function(){
+            $("#btn_1").click(function(){
+                $("h1").append("!!!!!!!!!");
+            })
+            $("#btn_2").click(function(){
+                $("h1").prepend("!!!!!!!!");
+            })
+            $("#btn_3").click(function(){
+                $("span").before("!!!!!!!!!");
+            })
+            $("#btn_4").click(function(){
+                $("span").after("!!!!!!!!!!!");
+            })
+        })
+    </script>
+</body>
+</html>

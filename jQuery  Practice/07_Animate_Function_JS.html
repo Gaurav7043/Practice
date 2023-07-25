@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Function</title>
+    <style>
+        .div_1{
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn_1">Animate</button>
+    <hr>
+    <div class="div_1"></div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        document.body.style.background
+        $(document).ready(function(){
+            $("#btn_1").click(function(){
+                $(".div_1").animate({margin : "20px", borderRadius : "50%", height : "150px", width : "150px"});
+            })
+        })
+
+        // $(document).ready(function(){
+        //     $(".div_1").mouseover(function(){
+        //         $(".div_1").animate({margin : "20px", borderRadius : "50%", height : "150px", width : "150px"});
+        //     })
+        //     $(".div_1").mouseleave(function(){
+        //         $(".div_1").animate({margin : "0px", borderRadius : "0%", height : "100px", width : "100px"});
+        //     })
+        // })
+    </script>
+</body>
+</html>

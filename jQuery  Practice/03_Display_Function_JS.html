@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Function</title>
+</head>
+<body>
+    <!-- display function mainly worked on height and width -->
+    <button id="btn1">Hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">Toggle</button>
+
+    <hr>
+    
+    <h1 class="head_1">Hello User</h1>
+    <h1 class="head_2">Hello User</h1>
+
+    <!-- jqurey internal cdn file  -->
+    <!-- offline package cdn -->
+    <script src="jquery.js"></script>
+
+    <script>
+        // selector = id, class, element
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".head_1").hide(2000);
+            })
+            $("#btn2").click(function(){
+                $(".head_1").show(2000);
+            })
+            $("#btn3").click(function(){
+                $(".head_2").toggle(2000);
+            })
+        })
+    </script>
+</body>
+</html>

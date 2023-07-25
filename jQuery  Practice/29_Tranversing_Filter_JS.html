@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        .css{
+            font-size: 19px;
+            color: blue;
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- filter function : first() last() eq() not() and filter() -->
+    <button id="btn">Click Here</button>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptates quasi in iste blanditiis aliquid doloremque, incidunt fugit aperiam odio minima molestiae cupiditate commodi reprehenderit. Illum odio iste rem vitae?
+    </p>
+    <p id="p2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat at consequuntur impedit necessitatibus reiciendis, veritatis optio sapiente cupiditate esse numquam tempora quo cum eveniet quaerat quos suscipit totam eius hic?
+    </p>
+    <p id="p3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora quae totam eaque inventore quidem, perspiciatis, porro dicta blanditiis incidunt autem earum dignissimos error veniam laboriosam cum dolorem amet assumenda!
+    </p>
+    <p id="p4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sunt odio tempora quasi. Nobis molestias deleniti cum earum aliquam nulla ipsam, maxime labore excepturi! Qui, exercitationem. Numquam quas minus expedita!
+    </p>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // $("p").filter("#p3").addClass("css");
+                // $("p").first().addClass("css");
+                // $("p").last().addClass("css");
+                // $("p").eq(1).addClass("css"); => apply index number 
+                $("p").not("#p3").addClass("css");
+            })
+        })
+    </script>
+</body>
+</html>

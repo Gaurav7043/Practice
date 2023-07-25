@@ -1,0 +1,8 @@
+tranversing means move through
+it represent DOM tree.
+
+<div class="div1">
+    <div class="div2"></div>
+</div>
+
+tranversing = ancestor(parent) 3 function , decendent(child) 2 function, siblings(sibling) 7 function, filter (search) 5 function.
