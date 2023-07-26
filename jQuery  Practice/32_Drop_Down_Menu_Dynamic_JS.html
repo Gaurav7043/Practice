@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu Dynamic</title>
+    <!-- google font awesom cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .container{
+            margin: 0px 80px;
+        }
+        .drop_down{
+            background-color: indianred;
+        }
+        .drop_down ul{
+            display: flex;
+            gap: 20;
+        }
+        .drop_down ul li{
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+        .drop_down ul li a{
+            color: white;
+        }
+        .drop_down ul span{
+            font-size: 12px;
+            color: white;
+        }
+        .drop_down .disp_menu{
+            position: relative;
+        }
+        .drop_down .disp_menu .show_menu{
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            flex-direction: column;
+            background-color: black;
+            width: 100px;
+            display: none;
+        }
+        .drop_down .disp_menu .inner_drop{
+            display: block;
+        }
+        .drop_down .disp_menu .show_menu li{
+            padding: 5px;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        .drop_down .disp_menu .show_menu .cube{
+            height: 15px;
+            width: 15px;
+            background-color: black;
+            margin: auto;
+            transform: rotate(45deg);
+            position: absolute;
+            top: -8px;
+            left: 39px
+        }
+    </style>
+</head> 
+<body>
+    <section class="drop_down">
+        <div class="container drop_p">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li class="disp_menu down_1">
+                    <a href="#">service</a>
+                    <span class="fa-solid fa-angle-down"></span>
+                    <ul class="show_menu">
+                        <div class="cube"></div>
+                        <li><a href="">service 1</a></li>
+                        <li><a href="">service 2</a></li>
+                        <li><a href="">service 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">about</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $(".disp_menu").click(function(){
+            //     $(".show_menu").toggleClass("inner_drop");
+            //     $(".fa-angle-down").toggleClass("fa-angle-up");
+            // })
+            $(".down_1").click(function(){
+                $(".show_menu").toggle()
+                $(".fa-angle-down").toggleClass("fa-angle-up");
+            })
+        })
+    </script>
+</body>
+</html>
