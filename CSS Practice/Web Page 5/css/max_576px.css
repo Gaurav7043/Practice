@@ -1,0 +1,144 @@
+@media (max-width: 576px) {
+    /* ===========common_css========== */
+    .container{
+        margin: 0px 20px;
+    }
+    /* =========header=============== */
+    header .head_p {
+        padding: 10px 0px;
+    }
+    header .nav ul{
+        display: none;
+    }
+    header .icon{
+        justify-content: center;
+    }
+    header .icon .search{
+        display: none;
+    }
+    header .head_flex .bars a span{
+        display: flex;
+    }
+    /* ===================section 3==================== */
+    .home_page .text h5{
+        font-size: 40px;
+        line-height: 50px;
+        width: 100%;
+    }
+    .home_page .grid_box{
+        padding: 5px;
+        margin-right: 5px;
+    }
+    .home_page .grid_box h4{
+        display: none;
+    }
+    /* ======================section 4===================== */
+    .about .about_p{
+        padding: 50px 0px;
+    }
+    .about .about_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .about .about_box .about_left h5{
+        padding: 0px 0px 10px 0px;
+    }
+    .about .about_box .about_left p{
+        font-size: 18px;
+    }
+    /* ===========section 5================== */
+    .we .we_p{
+        padding: 50px 0px;
+    }
+    .we .we_box{
+        flex-direction: column;
+    }
+    .we .we_box .we_right{
+        padding: 30px 0px 0px 0px;
+    }
+    /* ===========section 6============== */
+    .ab .ab_p{
+        padding: 50px 0px;
+    }
+    .ab .ab_box{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .ab .ab_box .ab_left img{
+        border-radius: 10px;
+    }
+    .ab .ab_box .ab_right img{
+        border-radius: 10px;
+    }
+    /* ==========section 7================ */
+    .food .food_p{
+        padding: 50px 0px;
+    }
+    .food .grid_box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .food h1{
+        font-size: 37px;
+        width: 100%;
+    }
+    .food .p1{
+        padding: 0px 0px 20px 0px;
+        font-size: 19px;
+    }
+    /* ===========section 8================ */
+    .count .count_box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .count .count_box .count_grid h1{
+        font-size: 30px;
+    }
+    /* ==================section 9============ */
+    .news .news_box{
+        flex-direction: column;
+    }
+    .news .news_box .news_right h3{
+        font-size: 35px;
+        text-align: left;
+    }
+    .news .news_box .news_right h4{
+        font-size: 16px;
+        padding-left: 0px;
+    }
+    .news .news_box .news_right .grid_form{
+        grid-template-columns: 1fr;
+    }
+    input[type = "text"]{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 22px;
+    }
+    .news .news_box .news_right p{
+        text-align: left;
+        padding: 20px 0px;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .news .news_box .news_right .grid_form button{
+        margin: 40px 0px 0px 0px;
+    }
+    /* =================section 10========================= */
+    .our .our_p{
+        padding: 50px 0px;
+    }
+    .our .our_grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+    .our .txt h3{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .our .our_grid .our_box{
+        margin: 20px 0px;
+    }
+    /* ===============section 11==================== */
+    footer .foot_grid{
+        grid-template-columns: 1fr;
+    }
+}

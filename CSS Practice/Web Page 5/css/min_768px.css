@@ -1,0 +1,79 @@
+@media (min-width: 768px) {
+    /* ===========common_css========== */
+    .container{
+        margin: 0px 50px;
+    }
+    /* =========header=============== */
+    /* header inherit form min width 576px */
+    /* ===================section 2==================== */
+    /* section 2 inherit form min width 576px */
+    /* ======================section 4===================== */
+    /* section 4 inherit form min width 576px */
+    /* ===========section 5================== */
+    /* section 5 inherit form min width 576px */
+    /* ===========section 6============== */
+    .ab .ab_p{
+        padding: 65px 0px;
+    }
+    .ab .ab_box{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .ab .ab_box .ab_left img{
+        border-radius: 10px;
+    }
+    .ab .ab_box .ab_right img{
+        border-radius: 10px;
+    }
+    /* ==========section 7================ */
+    .food .food_p{
+        padding: 65px 0px;
+    }
+    .food .grid_box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .food h1{
+        font-size: 45px;
+        width: 70%;
+    }
+    .food .p1{
+        padding: 0px 0px 50px 0px;
+        font-weight: 300;
+        line-height: 2em;
+    }
+    /* ===========section 8================ */
+    /* section 8 inherit from min width 578px */
+    /* ==================section 9============ */
+    .news .news_box{
+        flex-direction: row;
+    }
+    .news .news_box .news_right h4{
+        font-size: 20px;
+    }
+    .news .news_box .news_right .grid_form{
+        grid-template-columns: 2fr 0.8fr;
+        gap: 20px;
+    }
+    input[type = "text"]{
+        margin-top: 40px;
+    }
+    /* =================section 10========================= */
+    .our .our_p{
+        padding: 80px 0px;
+    }
+    .our .our_grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .our .txt h3{
+        font-size: 40px;
+    }
+    .our .our_grid .our_box{
+        margin: 20px 0px;
+    }
+    /* ===============section 11==================== */
+    footer .foot_grid{
+        grid-template-columns: 1.3fr 1fr;
+    }
+}
