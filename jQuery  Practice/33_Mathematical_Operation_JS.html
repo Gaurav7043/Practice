@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operation</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            width: 650px;
+            height: auto;
+            margin: 110px auto;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+        }
+        .sub{
+            text-align: center;
+            padding: 20px 0px;
+            font-size: 20px;
+        }
+        .col_1{
+            flex: .7;
+            padding: 0px 0px 0px 30px;
+        }
+        .col_2{
+            flex: 1;
+            display: flex;
+            padding: 5px;
+        }
+        input[type = "text"]{
+            width: 80%;
+            height: 25px;
+            padding: 0px 0px 0px 5px;
+        }
+        input:focus-visible{
+            outline: none;
+        }
+        button{
+            height: 35px;
+            width: 56px;
+            font-size: 25px;
+            margin: 4px;
+        }
+        .cla{
+            margin: 0px 0px 15px 0px;
+        }
+        #msg{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub">Maths Operations</div>
+        <form action="" name="myform">
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Enter 1st Number :</label>
+                </div>
+                <div class="col_2">
+                    <input type="text" id="user_input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col_1">
+                    <label for="">Enter 2nd Number :</label>
+                </div>
+                <div class="col_2">
+                    <input type="text" id="user_in">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col_1 cla">
+                    <button id="btn_1">+</button>
+                    <button id="btn_2">-</button>
+                    <button id="btn_3">*</button>
+                    <button id="btn_4">/</button>
+                </div>
+                <div class="col_2">
+                    <p>Answer is : <span id="msg"></span></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn_1").click(function(){
+                $user = $("#user_input").val();
+                $addd = $("#user_in").val();
+                $us = parseInt($user)+parseInt($addd);
+                $("#msg").text($us);
+                return false;
+            })
+            $("#btn_2").click(function(){
+                $user = $("#user_input").val();
+                $sub = $("#user_in").val();
+                $us = parseInt($user)-parseInt($sub);
+                $("#msg").text($us);
+                return false;
+            })
+            $("#btn_3").click(function(){
+                $user = $("#user_input").val();
+                $sub = $("#user_in").val();
+                $us = parseInt($user)*parseInt($sub);
+                $("#msg").text($us);
+                return false;
+            })
+            $("#btn_4").click(function(){
+                $user = $("#user_input").val();
+                $sub = $("#user_in").val();
+                $us = parseFloat($user)/parseFloat($sub);
+                $num = $us.length;
+                $("#msg").text($us);
+                return false;
+            })
+        })
+    </script>
+</body>
+</html>
