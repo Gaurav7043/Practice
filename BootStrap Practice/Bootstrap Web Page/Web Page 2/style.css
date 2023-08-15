@@ -1,0 +1,296 @@
+/* ===================google font family css cdn================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* ============common css========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto", sans-serif;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+/* ================section_1============================ */
+.header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1111111111111111111111111;
+}
+.header .navbar .navbar-brand{
+    letter-spacing: 4px;
+}
+.navbar-toggler-icon {
+    background-image: url(Images/bars_1.png) !important;
+    font-size: 35px;
+}
+.navbar-toggler{
+    background: rgba(150, 151, 156, 0.32) !important;
+    color: rgba(150, 151, 156, 0.32) !important;
+    padding: 0px !important;
+}
+.navbar-nav li a{
+    letter-spacing: 1px !important;
+}
+.navbar-nav li a:hover{
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+.navbar-collapse.hover{
+    background-color: #fff !important;
+    align-items: none !important;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: none !important;
+}
+/* ==========================section_2====================== */
+.home_page{
+    background: #ff4500;
+}
+.home_page .row{
+    padding: 130px 0px 180px 0px;
+}
+input[type = "email"]{
+    padding: 10px;
+    width: 40%;
+    height: 30px;
+}
+input:focus{
+    outline: none;
+}
+input[type = "email"]{
+    color: gray;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+}
+input[type = "submit"]{
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #e65252;
+    border: 2px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+    letter-spacing: 1px;
+}
+/* ==================section_3============================ */
+.company_page .row span{
+    color: #ff4500;
+    font-size: 300px;
+    display: grid;
+    place-content: center;
+}
+/* ===================section_4============================ */
+.service span{
+    color: #ff4500;
+}
+/* ==============section_5================================= */
+.protfolio img{
+    height: 250px;
+    width: 300px;
+}
+.protfolio .row .prot_inf{
+    padding-bottom: 20px;
+}
+.protfolio .prot_info{
+    box-shadow: 0px 0px 5px 3px gray;
+    overflow: hidden;
+    max-width: fit-content;
+    text-align: center;
+}
+/* ================section_6================================= */
+.customers{
+    padding-bottom: 50px;
+}
+.customers .slider{
+    padding: 20px 0px 0px 150px;
+}
+.bx-wrapper {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.bx-wrapper .bx-controls-direction a {
+    text-indent: 0 !important;
+    color: rgb(248,249,250);
+}
+.bx-wrapper .bx-prev {
+    background: none !important;
+    position: relative;
+}
+.bx-wrapper .bx-prev::after{
+    content: "\003C";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    color: #ff4500;
+    opacity: .5;
+    font-size: 85px !important;
+}
+.bx-wrapper .bx-prev:hover::after{
+    opacity: 1 !important;
+}
+.bx-wrapper .bx-next {
+    background: none !important;
+    position: relative;
+}
+.bx-wrapper .bx-next::after{
+    content: "\003E";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    color: #ff4500;
+    opacity: .5;
+    font-size: 85px !important;
+}
+.bx-wrapper .bx-next:hover::after{
+    opacity: 1 !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+    background-color: #fdae91 !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+    background-color: #ff4500 !important;
+}
+/* ==========================section_7============================ */
+.panel_heading{
+    color: #fff !important;
+    background-color: #f4511e !important;
+    padding: 25px;
+}
+.panel_body{
+    padding: 15px;
+}
+.panel{
+    border: 1px solid #f4511e;
+}
+.panel:hover{
+    box-shadow: 5px 5px 40px rgba(0,0,0, .2);
+}
+.panel_footer{
+    line-height: 1.8;
+    color: #818181;
+}
+.panel_footer h4{
+    color: #aaa;
+    font-size: 14px;
+}
+p{
+    margin: 0px 0px 0px 10px;
+    color: #818181;
+}
+.panel_footer .btn{
+    margin: 15px 0px;
+    background-color: #f4511e;
+    color: #fff;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.panel_footer .btn:hover{
+    border: 1px solid #f4511e;
+    background-color: transparent;
+    color: #f4511e;
+}
+/* =====================section_9============================ */
+img{
+    width: 100%;
+    height: 500px;
+}
+/* ============animated==================== */
+.slideanim {visibility:hidden;} .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    visibility: visible;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* ==================media_query============================= */
+@media (max-width: 576px){
+    /* ================section_5====================== */
+    .protfolio .row{
+        display: grid;
+        place-content: center;
+        gap: 20px;
+    }
+    .protfolio .row .test{
+        font-size: 21px !important;
+    }
+    /* =======================section_6================ */
+    .customers .slider{
+        padding: 20px 0px 0px 50px;
+    }   
+}
+@media (min-width: 576px){
+    /* =====================section_5================== */
+    /* section_5 inherit from bootstrap media query */
+    /* =======================section_6================ */
+    .customers .slider{
+        padding: 20px 0px 0px 70px;
+    }
+}
+@media (min-width: 768px){
+    /* =====================section_5================== */
+    /* section_5 inherit from bootstrap media query */
+    /* =======================section_6================ */
+    .customers .slider{
+        padding: 20px 0px 0px 90px;
+    }
+}
+@media (min-width: 992px){
+    /* =====================section_5================== */
+    /* section_5 inherit from bootstrap media query */
+    /* =======================section_6================ */
+    .customers .slider{
+        padding: 20px 0px 0px 150px;
+    }
+}
+@media (min-width: 1200px){
+    /* =====================section_5================== */
+    /* section_5 inherit from bootstrap media query */
+    /* =====================section_6================== */
+    /* section_6 inherit from min width 992px */
+}
+/* =======create random class which is not include any structure for replace========== */
+.header_fixed{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: crimson;
+}
