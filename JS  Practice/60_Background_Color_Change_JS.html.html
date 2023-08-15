@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="user">
+    <button onclick="ggg_fn()">click here</button>
+    <p id="msg"></p>
+    <script>
+        function ggg_fn(){
+            let user = document.getElementById("user").value;
+            let hh = document.getElementById("msg").style.backgroundColor = user;
+        }
+    </script>
+</body>
+</html>
